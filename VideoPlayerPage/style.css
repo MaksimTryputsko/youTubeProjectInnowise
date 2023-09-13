@@ -68,10 +68,12 @@ header {
   color: #30384c;
   outline: none;
 
-  background: url(../HomePage/image/heaeder/icons/searching.svg) no-repeat
-    center right;
+  background: url(../image/heaeder/icons/searching.svg) no-repeat center right;
   background-color: var(--searchInput-color);
   background-position: 95%;
+}
+.header__input::-webkit-input-placeholder {
+  color: var(--title-color);
 }
 .header__icons {
   display: flex;
@@ -472,7 +474,7 @@ button:hover,
   padding: 6px 10px;
   background-color: white;
   position: absolute;
-  bottom: -25px;
+  bottom: 0px;
   border-top: 1px solid grey;
 }
 .navigation__items li {
@@ -521,6 +523,12 @@ button:hover,
   }
 }
 @media (max-width: 600px) {
+  .flexWrapperForDescription {
+    margin-left: 15px;
+  }
+  header {
+    margin: 0px 20px;
+  }
   body {
     margin: 12px 0px;
   }
@@ -550,6 +558,10 @@ button:hover,
   .videoPlayer__control__options__firstBlock {
     width: 100%;
     justify-content: space-between;
+  }
+  .videoPlayerPage__mainBlock__mainVideo__information {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -582,9 +594,6 @@ button:hover,
     display: block;
     font-size: 16px;
   }
-  header {
-    margin: 0px 20px;
-  }
   .header__icons {
     align-items: center;
     gap: 45px;
@@ -609,6 +618,9 @@ button:hover,
   }
 }
 @media (max-width: 320px) {
+  .flexWrapperForDescription {
+    margin-left: 0px;
+  }
   header {
     margin-left: 14px;
   }
@@ -645,6 +657,8 @@ button:hover,
     align-items: center;
     justify-content: center;
     gap: 48px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .channelInformation__views {
     display: block;
@@ -667,7 +681,9 @@ button:hover,
     top: 78.5%;
     right: 5%;
   }
+
   .navigation__items {
     display: flex;
+    position: fixed;
   }
 }

@@ -72,10 +72,12 @@ button {
   color: #30384c;
   outline: none;
 
-  background: url(../HomePage/image/heaeder/icons/searching.svg) no-repeat
-    center right;
+  background: url(../image/heaeder/icons/searching.svg) no-repeat center right;
   background-color: var(--searchInput-color);
   background-position: 95%;
+}
+.header__input::-webkit-input-placeholder {
+  color: var(--title-color);
 }
 .header__icons {
   display: flex;
@@ -268,7 +270,7 @@ footer img {
   width: 250px;
   height: 150px;
   position: relative;
-
+  border-radius: 15px;
   background-size: cover;
   background-position: center center;
 }
@@ -426,18 +428,36 @@ footer {
   .header__input {
     width: 600px;
   }
-  .flexWrapperForHomePage,
-  .flexWrapperForVideoBlock {
-    gap: 35px;
-  }
-
-  .userVideos__block__video {
-    width: 220px;
-    border-radius: 10px;
-  }
 }
 
 @media (max-width: 1230px) {
+  body {
+    margin: 30px 10px 40px 10px;
+  }
+  .wrapperForNameBlock {
+    margin-right: 20px;
+  }
+  .flexWrapperForVideoBlock {
+    flex-wrap: wrap;
+  }
+  .recommendedVideosBlock {
+    flex-direction: column;
+  }
+  .recommendedChannel__control,
+  #toggleTheme {
+    display: none;
+  }
+
+  .libraryItem {
+    margin-bottom: 30px;
+  }
+  .homePage,
+  .userVideos,
+  .flexWrapperForVideoBlock,
+  .wrapperForNameBlock {
+    align-items: center;
+    justify-content: center;
+  }
   .wrapperForNameBlock {
     justify-content: flex-start;
     gap: 190px;
@@ -472,32 +492,6 @@ footer {
   }
   .recommendedChannel__name {
     white-space: nowrap;
-  }
-}
-
-@media (max-width: 1150px) {
-  .wrapperForNameBlock {
-    margin-right: 20px;
-  }
-  .flexWrapperForVideoBlock {
-    flex-wrap: wrap;
-  }
-  .recommendedVideosBlock {
-    flex-direction: column;
-  }
-  .recommendedChannel__control {
-    display: none;
-  }
-
-  .libraryItem {
-    margin-bottom: 30px;
-  }
-  .homePage,
-  .userVideos,
-  .flexWrapperForVideoBlock,
-  .wrapperForNameBlock {
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -547,12 +541,12 @@ footer {
   .subscriptionsUsers,
   footer,
   .header__icons > .header__icons__element,
-  .header__icons__noticeIcon,
-  #toggleTheme {
+  .header__icons__noticeIcon {
     display: none;
   }
   .userVideos__block__video {
     width: 288px;
+    height: 150px;
   }
 }
 @media (max-width: 631px) {
@@ -592,6 +586,15 @@ footer {
 }
 
 @media (max-width: 320px) {
+  .navigationBlock {
+    position: fixed;
+    bottom: 0px;
+    left: 11px;
+    z-index: 998;
+    background-color: white;
+    padding: 0px 10px;
+    border-top: 1px solid #d4d4d4;
+  }
   body {
     margin: 8px 0px 11px;
   }
@@ -638,11 +641,10 @@ footer {
     right: 3.36%;
   }
   .navigation__items {
-    margin-top: 6px;
-    padding-top: 15px;
+    margin-top: 0px;
+    padding-top: 5px;
 
     width: 100%;
-    border-top: 1px solid #f1f1f1;
     gap: 33px;
   }
   .navigation__items li a {

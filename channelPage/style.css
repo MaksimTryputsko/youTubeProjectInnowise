@@ -86,10 +86,12 @@ header {
   color: #30384c;
   outline: none;
 
-  background: url(../HomePage/image/heaeder/icons/searching.svg) no-repeat
-    center right;
+  background: url(../image/heaeder/icons/searching.svg) no-repeat center right;
   background-color: var(--searchInput-color);
   background-position: 95%;
+}
+.header__input::-webkit-input-placeholder {
+  color: var(--title-color);
 }
 .header__icons {
   display: flex;
@@ -693,7 +695,7 @@ button:hover {
     justify-content: flex-start;
   }
   .menu {
-    gap: 40px;
+    gap: 30px;
   }
   .menu span {
     font-size: 14px;
@@ -708,11 +710,12 @@ button:hover {
     right: 3.5%;
   }
   .navigationBlock {
-    bottom: 56.5px;
+    border-top: 1px solid grey;
+    bottom: 0px;
     right: 0px;
     max-width: 320px;
     width: 320px;
-    position: absolute;
+    position: fixed;
     z-index: 998;
   }
   .navigation {
@@ -723,6 +726,7 @@ button:hover {
   .navigation ul:first-child {
     margin-top: 12.5px;
   }
+
   .navigation__items {
     padding-left: 2px;
     justify-content: space-around;

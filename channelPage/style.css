@@ -1,0 +1,740 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  color: #898989;
+  font-family: 'Mulish', sans-serif;
+}
+h1 {
+  color: var(--title-color);
+  font-size: 26px;
+  font-weight: bold;
+}
+h2 {
+  color: var(--title-color);
+}
+body {
+  margin: 30px 70px 40px 30px;
+  background-color: var(--bg-color);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__icons__element:hover,
+.header__icons__noticeIcon:hover img,
+.channelPage__user__controlBlock img:hover,
+.menu img:hover {
+  filter: invert(81%) sepia(82%) saturate(2084%) hue-rotate(133deg)
+    brightness(96%) contrast(90%);
+  cursor: pointer;
+}
+.navigation__items li a img,
+.header__icons__element,
+.header__icons__noticeIcon img,
+.footer img,
+.channelPage__user__controlBlock img,
+.header__mainName__youTubeLogo,
+.menu img {
+  filter: var(--img-color);
+}
+.searchIcon {
+  display: none;
+}
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.flexWrapper {
+  display: flex;
+  gap: 60px;
+}
+.flexWrapperForMenu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.header__menu__line {
+  border-radius: 5px;
+  width: 20px;
+  height: 3px;
+  background-color: var(--title-color);
+}
+.header__mainName {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.header__mainName__name {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.header__input {
+  width: 830px;
+  height: 44px;
+  padding-left: 22px;
+  border-radius: 15px;
+  border: 1px solid var(--searchInput-color);
+  color: #30384c;
+  outline: none;
+
+  background: url(../HomePage/image/heaeder/icons/searching.svg) no-repeat
+    center right;
+  background-color: var(--searchInput-color);
+  background-position: 95%;
+}
+.header__icons {
+  display: flex;
+  gap: 50px;
+}
+.header__icons__noticeIcon {
+  position: relative;
+  display: flex;
+}
+.header__mainName__userName {
+  font-weight: bold;
+  color: #19202c;
+  display: none;
+}
+.header__icons__menu {
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+
+  display: none;
+}
+.header__icons__menu div {
+  background: black;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.notice {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  border: 1px solid white;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 5%;
+  right: -25%;
+}
+.channelPage__MainImage {
+  margin-right: 70px;
+}
+.flexWrapperForChannelPage {
+  display: flex;
+  gap: 62px;
+  margin-top: 30px;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+.navigation ul:first-child {
+  margin-top: 17px;
+  margin-bottom: 27px;
+}
+.navigation__items {
+  display: flex;
+  flex-direction: column;
+  gap: 27.5px;
+}
+.navigation__items li a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.flexWrapperForMenu div:first-child:hover,
+.navigation__items li:hover,
+.footer img:hover,
+.footer span:hover,
+.userIcon:hover,
+.channelPage__user__description:hover,
+button:hover {
+  cursor: pointer;
+}
+.navigation__items li:hover span {
+  color: #ff0000;
+}
+.menu span a {
+  border-bottom: 1px solid var(--bg-color);
+  font-size: 18px;
+  color: var(--title-color);
+}
+.menu span a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid red;
+  color: #ff0000;
+}
+
+.navigation__items li:hover img {
+  filter: invert(10%) sepia(95%) saturate(6618%) hue-rotate(2deg)
+    brightness(97%) contrast(117%);
+}
+.libraryItem {
+  margin-top: 38px;
+}
+.navigation__items__showMore {
+  padding-top: 1.5px;
+  padding-left: 3.5px;
+}
+
+.gamesBlock {
+  padding-top: 5px;
+}
+.subscriptionsUsers {
+  margin-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.subscriptionsUsers h2 {
+  font-size: 18px;
+}
+.subscriptionsUsers__elements {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.subscriptionsUsers__elements li a:hover span {
+  color: #19202c;
+}
+.subscriptionsUsers__elements li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.channelPage {
+  display: flex;
+  flex-direction: column;
+}
+.channelPage__MainImage {
+  max-width: 100%;
+  height: auto;
+}
+.channelPage__user {
+  margin-right: 70px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.channelPage__user__description {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.channelPage__user input {
+  width: 154px;
+  height: 40px;
+  background-color: #ff0000;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
+.channelPage__user input:hover {
+  cursor: pointer;
+  background-color: rgb(65, 1, 1);
+}
+.channelPage__user__controlBlock {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.channelPage__user__controlBlock img {
+  width: 22px;
+  height: 26px;
+}
+.homePage__userName__block {
+  padding-left: 5px;
+}
+.channelPage__mainBlock {
+  margin-top: 18px;
+  margin-right: 170px;
+  display: flex;
+  gap: 208px;
+}
+.channelPage__mainBlock__mainVideo {
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  display: flex;
+  gap: 70px;
+}
+.mainVideo {
+  margin-top: 60px;
+  display: flex;
+  gap: 33px;
+}
+.showMoreIcon {
+  display: none;
+}
+.mainVideo__video {
+  position: relative;
+}
+.mainVideo__video img {
+  width: 540px;
+  height: auto;
+}
+.mainVideo h2 {
+  padding-top: 3px;
+}
+.positionForRecommendedBlock {
+  top: 83%;
+  right: 2.4%;
+  color: white;
+}
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 25px;
+  background-color: black;
+  opacity: 0.5;
+
+  width: 47px;
+  height: 24px;
+  position: absolute;
+}
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+.mainVideo__description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.mainVideo__description h1 {
+  width: 80%;
+  padding-top: 14px;
+  word-spacing: 4px;
+}
+.mainVideo__description span:first-child {
+  word-spacing: -2px;
+}
+.mainVideo__description span:last-child {
+  padding-top: 19px;
+}
+.channelPage__mainBlock__recommendedChannel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  white-space: nowrap;
+}
+.channelPage__mainBlock__recommendedChannel div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.userVideos {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.userVideos__block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.userVideos__block h2 {
+  padding-top: 5px;
+}
+.recommendedChannelBlock h2 {
+  padding-top: 7px;
+}
+.userVideos__block__video {
+  max-width: 250px;
+  width: 250px;
+  height: 150px;
+  position: relative;
+
+  background-size: cover;
+  background-position: center center;
+}
+.userVideos__block__video:hover,
+.mainVideo__video:hover img,
+.channelPage__user__description:hover img {
+  filter: grayscale(80%);
+  cursor: pointer;
+}
+.flexWrapperForVideoBlock {
+  width: calc(100vw - 250px);
+  overflow: scroll;
+  display: flex;
+  gap: 40px;
+}
+
+.flexWrapperForVideoBlock::-webkit-scrollbar {
+  display: none;
+}
+.flexWrapperForVideoBlock span {
+  font-size: 13px;
+}
+.positionForUserBlock {
+  right: 5%;
+  top: 78%;
+}
+
+.arrows {
+  padding-top: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.wrapperForNameBlock {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 135px;
+}
+
+.arrows__element {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.arrows__element:hover {
+  background-color: rgb(34, 0, 0);
+}
+.arrowLeft {
+  padding-right: 2px;
+}
+.arrowRight {
+  padding-left: 2px;
+}
+.hiddenVideo {
+  flex: none;
+  overflow: hidden;
+}
+.hiddenVideo span {
+  white-space: nowrap;
+}
+.videoFirst {
+  background-image: url(../channelPage/image/userVideos/userVideo1.svg);
+}
+.videoSecond {
+  background-image: url(../channelPage/image/userVideos/userVideo2.svg);
+}
+
+.videoThird {
+  background-image: url(../channelPage/image/userVideos/userVideo3.svg);
+}
+.videoFourth {
+  background-image: url(../channelPage/image/userVideos/userVideo4.svg);
+}
+.videoFifth {
+  background-image: url(../channelPage/image/userVideos/userVideo5.svg);
+}
+.videoSixth {
+  background-image: url(../channelPage/image/userVideos/userVideo6.png);
+}
+.footer {
+  padding-top: 75px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+@media (max-width: 1700px) {
+  .channelPage__mainBlock__recommendedChannel {
+    display: none;
+  }
+  .flexWrapperForChannelPage {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .header__input {
+    width: 300px;
+  }
+  .mainVideo__description {
+    gap: 8px;
+  }
+  .mainVideo__description__information {
+    display: none;
+  }
+  .mainVideo__description span:last-child {
+    padding-top: 3px;
+  }
+}
+@media (max-width: 1250px) {
+  .channelPage__mainBlock {
+    margin-right: 0px;
+  }
+  .menu {
+    gap: 20px;
+  }
+  .libraryItem {
+    margin-top: 15px;
+  }
+  .subscriptionsUsers {
+    gap: 10px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1101px) {
+  body {
+    margin: 10px;
+  }
+  .wrapperForNameBlock {
+    justify-content: center;
+    padding-right: 0px;
+    gap: 15px;
+  }
+  .flexWrapperForVideoBlock {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .channelPage__mainBlock {
+    align-items: center;
+    justify-content: center;
+  }
+  .flexWrapperForVideoBlock div:nth-child(n + 4),
+  .mainVideo__description {
+    display: none;
+  }
+  .channelPage__user__controlBlock {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 852px) {
+  .channelPage__user {
+    gap: 12px;
+  }
+  .channelPage__MainImage,
+  .channelPage__user {
+    margin-right: 0px;
+  }
+  .header__icons {
+    gap: 0px;
+  }
+  .header__icons__element,
+  .header__icons__noticeIcon,
+  .channelPage__user__controlBlock img,
+  .menu span:nth-child(n + 4),
+  .menu img:last-child {
+    display: none;
+  }
+  .mainVideo {
+    margin-top: 20px;
+  }
+  .mainVideo__video img {
+    width: 400px;
+  }
+  .menu,
+  .channelPage__user {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 587px) {
+  .navigation ul:last-child,
+  .header__input,
+  .subscriptionsUsers {
+    display: none;
+  }
+  .flexWrapperForChannelPage {
+    flex-direction: column-reverse;
+  }
+  .navigation__items {
+    flex-direction: initial;
+    align-items: center;
+    gap: 0px;
+    justify-content: space-around;
+  }
+  .navigation__items li a {
+    flex-direction: column;
+  }
+  .libraryItem {
+    margin-top: 0px;
+  }
+  .searchIcon {
+    display: block;
+  }
+  .header__icons {
+    gap: 5px;
+  }
+  .channelPage__MainImage {
+    content: url(../channelPage/image/mainImageFor320px.svg);
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    margin: 0px 16px;
+  }
+  body {
+    margin: 12px 0px 12px;
+  }
+  .header__menu,
+  .mainVideo,
+  .wrapperForNameBlock {
+    display: none;
+  }
+  .flexWrapperForChannelPage {
+    gap: 0px;
+  }
+  .flexWrapperForVideoBlock {
+    gap: 33px;
+  }
+  .userVideos {
+    margin-top: 34px;
+  }
+  .channelPage__user {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    margin-right: 20px;
+  }
+  .header__icons {
+    gap: 45px;
+  }
+  .header__mainName__youTubeLogo,
+  .userIcon {
+    display: none;
+  }
+  .header__mainName__userName {
+    display: block;
+    white-space: nowrap;
+  }
+  .header__icons__menu {
+    display: flex;
+  }
+  .header__mainName {
+    gap: 10px;
+  }
+  .flexWrapperForChannelPage {
+    margin-top: 23px;
+    position: relative;
+  }
+  .channelPage__user__description,
+  .channelPage__user {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .channelPage__user {
+    transform: translate(15px, -60px);
+    gap: 18px;
+    overflow: hidden;
+    width: 280px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .showMoreIcon {
+    display: block;
+  }
+  .channelPage__user__description {
+    gap: 4px;
+  }
+  .channelPage__user__description img {
+    width: 70px;
+    height: 70px;
+  }
+  .channelPage__user__description span {
+    font-size: 12px;
+  }
+  .channelPage__user__controlBlock input {
+    width: 120px;
+    height: 34px;
+    font-size: 12px;
+  }
+  .channelPage__mainBlock {
+    transform: translate(0px, -60px);
+  }
+  .flexWrapperForVideoBlock {
+    transform: translate(0px, -74px);
+    gap: 28px;
+  }
+  .channelPage__mainBlock {
+    margin-top: 29.5px;
+    margin-left: 17px;
+    justify-content: flex-start;
+  }
+  .menu {
+    gap: 40px;
+  }
+  .menu span {
+    font-size: 14px;
+  }
+  .userVideos__block__video {
+    max-width: 288px;
+    width: 288px;
+    height: 150px;
+    border-radius: 15px;
+  }
+  .positionForUserBlock {
+    right: 3.5%;
+  }
+  .navigationBlock {
+    bottom: 56.5px;
+    right: 0px;
+    max-width: 320px;
+    width: 320px;
+    position: absolute;
+    z-index: 998;
+  }
+  .navigation {
+    background: white;
+    display: flex;
+    gap: 10px;
+  }
+  .navigation ul:first-child {
+    margin-top: 12.5px;
+  }
+  .navigation__items {
+    padding-left: 2px;
+    justify-content: space-around;
+  }
+  .navigation__items li a {
+    gap: 4px;
+  }
+  .navigation__items span {
+    font-size: 10px;
+  }
+  .trendingIcon {
+    position: relative;
+    left: 9px;
+  }
+}

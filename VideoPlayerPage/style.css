@@ -468,7 +468,8 @@ button:hover,
   display: flex;
   flex-direction: unset;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
   gap: 20px;
 
   padding: 6px 10px;
@@ -521,6 +522,9 @@ button:hover,
   .flexWrapperForVideoBlock {
     align-items: center;
   }
+  .menu {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 600px) {
   .flexWrapperForDescription {
@@ -562,6 +566,10 @@ button:hover,
   .videoPlayerPage__mainBlock__mainVideo__information {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .navigation__items {
+    display: flex;
+    position: fixed;
   }
 }
 
@@ -680,10 +688,5 @@ button:hover,
   .positionForUserBlock {
     top: 78.5%;
     right: 5%;
-  }
-
-  .navigation__items {
-    display: flex;
-    position: fixed;
   }
 }

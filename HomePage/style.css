@@ -517,7 +517,7 @@ footer {
     display: flex;
     flex-direction: unset;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
   .navigation__items li a {
     flex-direction: column;
@@ -547,6 +547,16 @@ footer {
   .userVideos__block__video {
     width: 288px;
     height: 150px;
+  }
+  .navigationBlock {
+    position: fixed;
+    bottom: 0px;
+    left: 11px;
+    z-index: 998;
+    background-color: white;
+    padding: 0px 10px;
+    border-top: 1px solid #d4d4d4;
+    width: 100%;
   }
 }
 @media (max-width: 631px) {
@@ -586,14 +596,11 @@ footer {
 }
 
 @media (max-width: 320px) {
+  .navigation__items {
+    justify-content: center;
+  }
   .navigationBlock {
-    position: fixed;
-    bottom: 0px;
-    left: 11px;
-    z-index: 998;
-    background-color: white;
-    padding: 0px 10px;
-    border-top: 1px solid #d4d4d4;
+    width: auto;
   }
   body {
     margin: 8px 0px 11px;

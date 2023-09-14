@@ -597,6 +597,14 @@ button:hover {
   .channelPage__MainImage {
     content: url(../channelPage/image/mainImageFor320px.svg);
   }
+  .navigationBlock {
+    border-top: 1px solid grey;
+    bottom: 0px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 998;
+  }
 }
 
 @media (max-width: 450px) {
@@ -708,15 +716,6 @@ button:hover {
   }
   .positionForUserBlock {
     right: 3.5%;
-  }
-  .navigationBlock {
-    border-top: 1px solid grey;
-    bottom: 0px;
-    right: 0px;
-    max-width: 320px;
-    width: 320px;
-    position: fixed;
-    z-index: 998;
   }
   .navigation {
     background: white;

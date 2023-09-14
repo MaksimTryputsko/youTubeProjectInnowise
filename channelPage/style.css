@@ -568,6 +568,12 @@ button:hover {
 }
 
 @media (max-width: 587px) {
+  .navigation ul:first-child {
+    margin-bottom: 0px;
+  }
+  .flexWrapperForVideoBlock {
+    margin-bottom: 70px;
+  }
   .navigation ul:last-child,
   .header__input,
   .subscriptionsUsers {
@@ -634,6 +640,9 @@ button:hover {
 }
 
 @media (max-width: 320px) {
+  .flexWrapperForVideoBlock {
+    margin-bottom: -30px;
+  }
   header {
     margin-right: 20px;
   }

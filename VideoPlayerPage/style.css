@@ -626,6 +626,9 @@ button:hover,
   }
 }
 @media (max-width: 320px) {
+  .wrapperForVideoBlock {
+    margin-bottom: 50px;
+  }
   .flexWrapperForDescription {
     margin-left: 0px;
   }

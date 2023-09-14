@@ -509,6 +509,9 @@ footer {
 }
 
 @media (max-width: 743px) {
+  .homePage {
+    margin-bottom: 20px;
+  }
   .flexWrapperForHomePage {
     flex-direction: column-reverse;
   }
@@ -642,6 +645,7 @@ footer {
   }
   .homePage {
     flex-direction: initial;
+    margin-bottom: 40px;
   }
   .positionForUserBlock {
     top: 78%;

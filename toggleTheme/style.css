@@ -1,0 +1,13 @@
+:root[data-theme='light'] {
+  --bg-color: #ffffff;
+  --title-color: #17171e;
+  --img-color: none;
+  --searchInput-color: #f5f5f5;
+}
+:root[data-theme='dark'] {
+  --bg-color: #17171e;
+  --title-color: #dfe4ea;
+  --img-color: invert(100%) sepia(3%) saturate(913%) hue-rotate(325deg)
+    brightness(116%) contrast(76%);
+  --searchInput-color: #6a7592;
+}

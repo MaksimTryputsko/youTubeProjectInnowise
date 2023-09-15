@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player Page</title>
+    <link href="../toggleTheme/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div class="flexWrapper">
+        <div class="flexWrapperForMenu">
+          <div class="header__menu">
+            <div class="header__menu__line"></div>
+            <div class="header__menu__line"></div>
+            <div class="header__menu__line"></div>
+          </div>
+          <div class="header__mainName">
+            <a href="../index.html"
+              ><img src="../image/heaeder/Shape.svg" alt="youTube"
+            /></a>
+            <img
+              src="../image/heaeder/Combined Shape.svg"
+              alt="name"
+              class="header__mainName__youTubeLogo"
+            />
+          </div>
+          <button id="toggleTheme">Toggle Theme</button>
+        </div>
+        <input type="text" class="header__input" placeholder="Search" />
+      </div>
+      <div class="header__icons">
+        <img
+          src="../image/heaeder/icons/searching.svg"
+          alt="searchIcon"
+          class="searchIcon"
+        />
+        <img
+          src="../image/heaeder/icons/phone-18.svg"
+          alt="camera"
+          class="header__icons__element"
+        />
+        <img
+          src="../image/heaeder/icons/Combined Shape.svg"
+          alt="menu"
+          class="header__icons__element"
+        />
+        <div class="header__icons__noticeIcon">
+          <img src="../image/heaeder/icons/ui-11.svg" alt="notice" />
+          <div class="notice">3</div>
+        </div>
+        <img
+          src="../image/heaeder/icons/Userpic.svg"
+          alt="user"
+          class="userIcon"
+        />
+        <div class="header__icons__menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapperForVideoPlayerPage">
+      <div class="videoPlayerPage__mainBlock">
+        <div class="videoPlayerPage__mainBlock__mainVideo">
+          <div class="videoPlayerPage__mainBlock__mainVideo__videoPlayer">
+            <img
+              src="../VideoPlayerPage/image/videoPlayer/mainVideo.svg"
+              alt="video"
+              class="mainVideo"
+            />
+            <div class="videoPlayer__control">
+              <div class="videoPlayer__control__time">
+                <span>1:34</span><span>19:00</span>
+              </div>
+              <div class="videoPlayer__control__way">
+                <div class="videoPlayer__control__way__finishWay"></div>
+              </div>
+              <div class="videoPlayer__control__options">
+                <div class="videoPlayer__control__options__firstBlock">
+                  <img
+                    src="../VideoPlayerPage/image/videoPlayer/videoPlayerControl/Pause.svg"
+                    alt="Pause"
+                  />
+                  <img
+                    src="../VideoPlayerPage/image/videoPlayer/videoPlayerControl/Next.svg"
+                    alt="Next"
+                  />
+                  <div class="audioControlWrapper">
+                    <img
+                      src="../VideoPlayerPage/image/videoPlayer/videoPlayerControl/Volume.svg"
+                      alt="Next"
+                    />
+                    <div class="videoPlayer__control__options__volumeControl">
+                      <div
+                        class="videoPlayer__control__options__volumeControl__finish"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="videoPlayer__control__options__secondBlock">
+                  <img
+                    src="../VideoPlayerPage/image/videoPlayer/videoPlayerControl/Subtitles.svg"
+                    alt="subtitles"
+                  />
+                  <img
+                    src="../VideoPlayerPage/image/videoPlayer/videoPlayerControl/Settings.svg"
+                    alt="settings"
+                  />
+                  <img
+                    src="../VideoPlayerPage/image/videoPlayer/videoPlayerControl/Size.svg"
+                    alt="size"
+                  />
+                  <img
+                    src="../VideoPlayerPage/image/videoPlayer/videoPlayerControl/Full Screen.svg"
+                    alt="full screen"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="videoPlayer__controlForSmallMedia">
+              <img
+                src="../VideoPlayerPage/image/videoPlayer/videoPlayerControlForSmallMedia/Pause (3).svg"
+                alt="logo"
+              />
+              <span>1:34</span>
+              <div class="videoPlayer__control__way">
+                <div class="videoPlayer__control__way__finishWay"></div>
+              </div>
+              <span>-10:00</span>
+              <img
+                src="../VideoPlayerPage/image/videoPlayer/videoPlayerControlForSmallMedia/Volume (1).svg"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <div class="flexWrapperForDescription">
+            <div class="videoPlayerPage__mainBlock__mainVideo__name">
+              <h1>Dude You Re Getting A Telescope</h1>
+              <img
+                src="../VideoPlayerPage/image/menu/Right Arrow (2).svg"
+                alt="icon"
+                class="showMoreIcon"
+              />
+            </div>
+            <div class="videoPlayerPage__mainBlock__mainVideo__description">
+              <div>123k views</div>
+              <div class="menu">
+                <button class="menu__element">
+                  <img
+                    src="../VideoPlayerPage/image/menu/Like.svg"
+                    alt="like"
+                  />
+                  <span>123k</span>
+                </button>
+                <button class="menu__element">
+                  <img
+                    src="../VideoPlayerPage/image/menu/Dislike.svg"
+                    alt="like"
+                  /><span>453k</span>
+                </button>
+                <button class="menu__element">
+                  <img
+                    src="../VideoPlayerPage/image/menu/Fill 62.svg"
+                    alt="share"
+                  /><span>Share</span>
+                </button>
+                <div class="menu__navigation">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="videoPlayerPage__mainBlock__mainVideo__line"></div>
+            <div class="videoPlayerPage__mainBlock__mainVideo__information">
+              <div class="channelInformation">
+                <img
+                  src="../VideoPlayerPage/image/videoPlayer/icon.svg"
+                  alt="icon"
+                />
+                <div class="channelInformationFlexWrapper">
+                  <div>
+                    <h2>Food & Drink</h2>
+                    <span class="channelInformation__date"
+                      >Published on 14 Jun 2019</span
+                    >
+                    <span class="channelInformation__views">123k views</span>
+                  </div>
+                  <div class="channelInformation__information">
+                    A successful marketing plan relies heavily on the
+                    pulling-power of advertising copy. Writing result-oriented
+                    ad copy is difficult, as it must appeal to, entice, and
+                    convince consumers to take action. There is no magic formula
+                    to write perfect ad copy; it is based on a number of
+                    factors, including ad placement, demographic, even the
+                    consumer’s mood when they see your ad.
+                  </div>
+                  <span class="channelInformation__showMore">Show more</span>
+                </div>
+              </div>
+              <div class="channelButton">
+                <button>Subscribe 2.3m</button>
+                <span>Subscribe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapperForVideoBlock">
+        <div class="nameVideoBlock">
+          <h1>Next</h1>
+          <div class="nameVideoBlock__autoPlay">
+            <span>AUTOPLAY</span> <button></button>
+          </div>
+        </div>
+        <div class="flexWrapperForVideoBlock">
+          <div class="userVideos__block">
+            <a href="../VideoPlayerPage/index.html">
+              <div class="userVideos__block__video videoFirst">
+                <div class="time positionForUserBlock"><span>8:00</span></div>
+              </div>
+            </a>
+            <h2>Baby Monitor Technology</h2>
+            <div class="description">
+              <span>123k views</span>
+              <span>Dollie Blair</span>
+            </div>
+          </div>
+          <div class="userVideos__block">
+            <a href="../VideoPlayerPage/index.html">
+              <div class="userVideos__block__video videoSecond">
+                <div class="time positionForUserBlock"><span>8:00</span></div>
+              </div>
+            </a>
+            <h2>A Good Autoresponder</h2>
+            <div class="description">
+              <span>123k views</span>
+              <span>Dollie Blair</span>
+            </div>
+          </div>
+          <div class="userVideos__block">
+            <a href="../VideoPlayerPage/index.html">
+              <div class="userVideos__block__video videoThird">
+                <div class="time positionForUserBlock"><span>8:00</span></div>
+              </div>
+            </a>
+            <h2>Selecting The Right Hotel</h2>
+            <div class="description">
+              <span>123k views</span>
+              <span>Dollie Blair</span>
+            </div>
+          </div>
+          <div class="userVideos__block">
+            <a href="../VideoPlayerPage/index.html">
+              <div class="userVideos__block__video videoFourth">
+                <div class="time positionForUserBlock"><span>8:00</span></div>
+              </div>
+            </a>
+            <h2>Telescopes 101r</h2>
+            <div class="description">
+              <span>11k views · 6 months ago</span>
+              <span>Dollie Blair</span>
+            </div>
+          </div>
+          <ul class="navigation__items">
+            <li>
+              <img src="../image/navigation/home.svg" alt="logo" />
+              <span class="navigation__items__active">Home</span>
+            </li>
+            <li class="trendingIcon">
+              <img src="../image/navigation/Favourites.svg" alt="logo" />
+              <span>Trending</span>
+            </li>
+            <li>
+              <img src="../image/navigation/Subscriptions.svg" alt="logo" />
+              <span>Subscriptions</span>
+            </li>
+            <li class="libraryItem">
+              <img src="../image/navigation/Library.svg" alt="logo" />
+              <span>Library</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../toggleTheme/script.js"></script>
+  </body>
+</html>
